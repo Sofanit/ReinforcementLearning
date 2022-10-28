@@ -1,20 +1,20 @@
 Mujoco-py
 These are the steps to install Mujoco-py on UBUNTU 20.04, 64-bit, python3.8
 
-Step1: Download mujoco200 linux from https://www.roboti.us/download.html
-Step2: Create ~/.mujoco directory and extract mujoco200_linux inside the directory
-Step3: Rename mujoco200_linux to mujoco200
-Step4: Download Activation key (mjkey.txt) from https://www.roboti.us/license.html
-Step5: Move the activation key to ~/.mujoco 
+	Step1: Download mujoco200 linux from https://www.roboti.us/download.html
+	Step2: Create ~/.mujoco directory and extract mujoco200_linux inside the directory
+	Step3: Rename mujoco200_linux to mujoco200
+	Step4: Download Activation key (mjkey.txt) from https://www.roboti.us/license.html
+	Step5: Move the activation key to ~/.mujoco 
 	mv mjkey.txt ~/.mujoco
-Step4: Build Mujoco-py from source:
+	Step6: Build Mujoco-py from source:
 	git clone https://github.com/openai/mujoco-py.git
 	pip install -r requirements.txt 
 	pip install -r requirements.dev.txt 
 	sudo python3 setup.py install 
-Step5: Put export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/<path>/.mujoco/mujoco200/bin in your ~/.bashrc file
- source ~/.bashrc
- Step6: Run your first program
+	Step7: Put export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/<path>/.mujoco/mujoco200/bin in your ~/.bashrc file
+ 	source ~/.bashrc
+ 	Step6: Run your first program
  	import gym
 	import mujoco_py
 	env = gym.make('FetchReach-v1')
