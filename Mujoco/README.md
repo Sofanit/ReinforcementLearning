@@ -35,7 +35,7 @@ Troubleshooting
 3. Glew initalization error missing gl version
 	Install the following package
 	sudo apt-get install -y libglew-dev
-	Add export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libGLEW.so to ~/bashrc file and source ~/bashrc
+	Add export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libGLEW.so to ~/.bashrc file and source ~/.bashrc
 4. [Errno 2] No such file or directory: 'patchelf']
 	sudo add-apt-repository ppa:jamesh/snap-support
 	sudo apt-get update
